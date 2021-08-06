@@ -1,0 +1,13 @@
+server:
+  port: 8705
+
+spring:
+  application:
+    name: consumer
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8703/eureka
+  instance:
+    hostname: localhost

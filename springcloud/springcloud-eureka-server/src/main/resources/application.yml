@@ -1,0 +1,15 @@
+#server:
+#  port: 8666
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8701/eureka,http://localhost:8702/eureka
+    register-with-eureka: false #自身 不在向eureka注册
+    fetch-registry: false #启动时禁用client的注册
+#  instance:
+#    hostname: localhost
+
+spring:
+  application:
+    name: eureka-server
